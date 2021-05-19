@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  componentToDisplay: string;
   title = 'project';
+
+  onHeaderEvent(headerSelection: string){
+    this.componentToDisplay = headerSelection;
+  }
 }
